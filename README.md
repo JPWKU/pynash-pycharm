@@ -60,3 +60,4 @@ and [Vagrant](https://www.vagrantup.com/downloads.html) installed
   * It will pause on the first executable statement that it comes to if you pass ``` suspend=True ``` to settrace 
   * Otherwise you can now set breakpoints and step through/step out.  Even just going step by step to get a nice visual of how your program executes.
 
+6. We have a computer so we should automate the setup some
