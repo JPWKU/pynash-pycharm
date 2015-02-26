@@ -2,6 +2,11 @@
 Remote Debugging with PyCharm (and Vagrant)
 ===========================================
 ### Hi!!! My name is Jeremy Phelps and I'm from Bowling Green, KY (about an hour north of here)
+### Super glad to be hanging with PyNash and look forward to learning a ton
+### I spend a lot of my time building things as a member of [Dell Cloud Manager](http://software.dell.com/products/cloud-manager/) on
+### the backend systems team.  Other times I can be found mountain biking with my family and 
+### in pursuit of the perfect hot wing.
+
 ## Setup Instructions for PyCharm on Mac 0SX
 
 This assumes you have [PyCharm Professional Edition](http://www.jetbrains.com/pycharm/buy/) 
