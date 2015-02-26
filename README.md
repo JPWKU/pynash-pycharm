@@ -51,10 +51,12 @@ and [Vagrant](https://www.vagrantup.com/downloads.html) installed
 
 5. Go back to your VM and kick off a script or test suite:
   * Copy the following snippet into the script that you want to debug
-  * ``` import pydevd
-pydevd.settrace(<local ip of host machine>, port=4567, stdoutToServer=True, stderrToServer=True) ```
+  * ```python 
+    import pydevd
+    pydevd.settrace(<local ip of host machine>, port=4567, stdoutToServer=True, stderrToServer=True) 
+    ```
   * Now you can kick off your script/test-suite and you will see the process connect to the PyCharm debugger
+  * Here is where we do ``` nosetests ``` or ``` python -m unittest <module> ``` 
   * It will pause on the first executable statement that it comes to if you pass ``` suspend=True ``` to settrace 
   * Otherwise you can now set breakpoints and step through/step out.  Even just going step by step to get a nice visual of how your program executes.
-  * ``` cd /<projectdirectory>/es-ex-pyagent/tests/ ```
 
