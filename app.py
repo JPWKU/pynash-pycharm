@@ -1,11 +1,26 @@
+import sys
+
 import pydevd
-pydevd.settrace('192.168.1.7',
-                port=4567,
+import os
+
+
+try:
+    ip = os.environ['PYDEV_IP']
+    port = os.environ['PYDEV_PORT']
+except KeyError:
+    print "You must set PYDEV_IP and PYDEV_PORT"
+    sys.exit(1)
+
+
+pydevd.settrace(ip,
+                port=int(port),
                 stdoutToServer=True,
                 stderrToServer=True,
-                suspend=False)
+                suspend=True)
+
+
 def fibbo(n):
     if n == 0 or n == 1:
-        return 1
+        return 2
     else:
         return fibbo(n-1) + fibbo(n-2)
